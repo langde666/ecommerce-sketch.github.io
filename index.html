@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">ECOMMERCE</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>  
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>  
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>  
+                    </li>
+                    <li class="nav__item">
+                        <a href="#subcribed" class="nav__link">Subscribed</a>  
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <i class="fa fa-cart-shopping nav__cart"></i>
+                <i class="fa fa-bars nav__toggle" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="l-main">
+        <!-- HOME -->
+        <section class="section home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">NEW <br> <span>ARRIVALS</span></h1>
+                    <a href="#featured" class="button">GO SHOPPING</a>
+                </div>
+
+                <img src="./assets/img/home.jpg" alt="home-img" class="home__img">
+            </div>
+        </section>
+
+        <!-- COLLECTION -->
+        <section class="section collection">
+            <div class="collection__container bd-grid">
+                <div class="collection__box">
+                    <img src="./assets/img/backpack-man.jpg" alt="backpack-man" class="collection__img">
+
+                    <div class="collection__data">
+                        <h2 class="collection__title"><span class="collection__subtitle">Men</span><br>Backpack</h2>
+                        <a href="#" class="collection__view">View collection</a>
+                    </div>
+                </div>
+
+                <div class="collection__box">
+                    <div class="collection__data">
+                        <h2 class="collection__title"><span class="collection__subtitle">Women</span><br>Backpack</h2>
+                        <a href="#" class="collection__view">View collection</a>
+                    </div>
+
+                    <img src="./assets/img/backpack-woman.jpg" alt="backpack-woman" class="collection__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="section featured" id="featured">
+            <h2 class="section-title">FEATURED PRODUCTS</h2>
+            <a href="#" class="section-all">View All</a>
+
+            <div class="featured__container bd-grid">
+                <div class="featured__product">
+                    <div class="featured__box">
+                        <div class="featured__new">NEW</div>
+
+                        <img src="./assets/img/featured_1.png" alt="featured_product_1" class="featured__img">
+                    
+                        <div class="featured__data">
+                            <h3 class="featured__name">NEW ORIGINAL BACKPACK</h3>
+                            <span class="featured__perci">460,000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured__product">
+                    <div class="featured__box">
+                        <div class="featured__new">NEW</div>
+
+                        <img src="./assets/img/featured_2.png" alt="featured_product_2" class="featured__img">
+                    
+                        <div class="featured__data">
+                            <h3 class="featured__name">SIGNATURE BACKPACK</h3>
+                            <span class="featured__perci">530,000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured__product">
+                    <div class="featured__box">
+                        <div class="featured__new">NEW</div>
+
+                        <img src="./assets/img/featured_3.png" alt="featured_product_3" class="featured__img">
+                    
+                        <div class="featured__data">
+                            <h3 class="featured__name">BASIC BACKPACK</h3>
+                            <span class="featured__perci">380,000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFER -->
+        <section class="section offer">
+            <div class="offer__bg">
+                <div class="offer__data">
+                    <h2 class="offer__title">Special Offer</h2>
+                    <p class="offer__description">Back To School: 30/08 - 02/09</p>
+
+                    <a href="#" class="button">SHOP NOW</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW ARRIVALS -->
+        <section class="section new" id="new">
+            <h2 class="section-title">NEW ARRIVALS</h2>
+            <a href="#" class="section-all">View all</a>
+
+            <div class="new__container bd-grid">
+                <div class="new__box">
+                    <img src="./assets/img/new_1.png" alt="new-arrival-1" class="new__img">
+
+                    <div class="new__link">
+                        <a href="#" class="button">VIEW PRODUCT</a>
+                    </div>
+                </div>
+
+                <div class="new__box">
+                    <img src="./assets/img/new_2.png" alt="new-arrival-2" class="new__img">
+
+                    <div class="new__link">
+                        <a href="#" class="button">VIEW PRODUCT</a>
+                    </div>
+                </div>
+
+                <div class="new__box">
+                    <img src="./assets/img/new_3.png" alt="new-arrival-3" class="new__img">
+
+                    <div class="new__link">
+                        <a href="#" class="button">VIEW PRODUCT</a>
+                    </div>
+                </div>
+
+                <div class="new__box">
+                    <img src="./assets/img/new_4.png" alt="new-arrival-4" class="new__img">
+
+                    <div class="new__link">
+                        <a href="#" class="button">VIEW PRODUCT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="section newsletter" id="subcribed">
+            <div class="newsletter__container bd-grid">
+                <h2 class="newsletter__subcribe">OUR NEWSLETTER</h2>
+                <p class="newsletter__description">Promotion of new products and sales. Direct to yours</p>
+            
+                <form action="" class="newsletter__form">
+                    <input type="email" class="newsletter__input" placeholder="Enter your email">
+                    <a href="#" class="button">SUBCRIBE</a>
+                </form>
+            </div>
+        </section>
+
+        <!-- SPONSORS -->
+        <!-- <section class="section sponsors">
+            <div class="sponsors__container bd-grid">
+                <div class="sponsors__logo">
+                    <img src="./assets/img/sponsor_1.jpg" alt="sponsor-logo-1">
+                </div>
+
+                <div class="sponsors__logo">
+                    <img src="./assets/img/sponsor_2.jpg" alt="sponsor-logo-2">
+                </div>
+
+                <div class="sponsors__logo">
+                    <img src="./assets/img/sponsor_3.jpg" alt="sponsor-logo-3">
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section footer">
+        <div class="footer__container bd-grid">
+            <div class="footer__box">
+                <h3 class="footer__title footer__title--logo">ECOMMERCE</h3>
+                <ul>
+                    <li>
+                        <a href="#" class="footer__link">
+                            <i class="fa fa-location-dot"></i>
+                            Store 1: 633 Nguyễn Đình Chiểu, P.2, Q.3. HCM
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            <i class="fa fa-location-dot"></i>
+                            Store 2: 71 Trần Quang Diệu, P14, Q3, HCM
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            <i class="fa fa-phone"></i>19001052
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            <i class="fa fa-envelope"></i>
+                            thecameliavn@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">EXPLORE</h3>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#featured" class="footer__link">Featured</a></li>
+                    <li><a href="#new" class="footer__link">New</a></li>
+                    <li><a href="#subcribed" class="footer__link">Subscribed</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">OUR SERVICES</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Pricing</a></li>
+                    <li><a href="#" class="footer__link">Free Shipping</a></li>
+                    <li><a href="#" class="footer__link">Gift Cards</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">FOLLOW</h3>
+                <a href="#" class="footer__social"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="footer__social"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer__social"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2022 copyright all right reserved</p>
+    </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scroll-up" id="scroll-up">
+        <i class="fa fa-arrow-up scroll-up__icon"></i>
+    </a>
+
+    <!-- MAIN JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
