@@ -12,7 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
-<body>
+<body body class="">
     <!-- HEADER -->
     <header class="l-header" id="header">
         <nav class="nav bd-grid">
@@ -39,6 +39,10 @@
 
             <div>
                 <i class="fa fa-cart-shopping nav__cart"></i>
+                
+                <!-- THEME CHANGE BUTTON -->
+                <i class="fa fa-moon change-theme" id="theme-button"></i>  
+
                 <i class="fa fa-bars nav__toggle" id="nav-toggle"></i>
             </div>
         </nav>
@@ -181,17 +185,19 @@
         </section>
 
         <!-- NEWSLETTER -->
-        <section class="section newsletter" id="subcribed">
-            <div class="newsletter__container bd-grid">
-                <h2 class="newsletter__subcribe">OUR NEWSLETTER</h2>
-                <p class="newsletter__description">Promotion of new products and sales. Direct to yours</p>
-            
-                <form action="" class="newsletter__form">
-                    <input type="email" class="newsletter__input" placeholder="Enter your email">
-                    <a href="#" class="button">SUBCRIBE</a>
-                </form>
-            </div>
-        </section>
+        <div class="bg">
+            <section class="section newsletter" id="subcribed">
+                <div class="newsletter__container bd-grid">
+                    <h2 class="newsletter__subcribe">OUR NEWSLETTER</h2>
+                    <p class="newsletter__description">Promotion of new products and sales. Direct to yours</p>
+                
+                    <form action="" class="newsletter__form">
+                        <input type="email" class="newsletter__input" placeholder="Enter your email">
+                        <a href="#subcribed" class="button button--light">SUBSCRIBE</a>
+                    </form>
+                </div>
+            </section>
+        </div>
 
         <!-- SPONSORS -->
         <!-- <section class="section sponsors">
@@ -270,7 +276,7 @@
             </div>
         </div>
 
-        <p class="footer__copy">&#169; 2022 copyright all right reserved</p>
+        <p class="footer__copy">&#169; <a href="https://www.langde-666.tk/" target="_blank" class="footer__link">Langde666</a>. All right reserved</p>
     </footer>
 
     <!-- SCROLL UP -->

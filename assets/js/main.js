@@ -61,3 +61,36 @@ window.addEventListener('scroll', function(){
         scrollUp.classList.remove('show-scroll');
     }
 });
+
+// DARK LIGHT THEME
+const themeBtn = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'fa-sun';
+
+// Handle previously selected theme
+const selectedTheme = localStorage.getItem('selectedTheme');
+const selectedIcon = localStorage.getItem('selectedIcon');
+
+if (selectedTheme) {
+    if (selectedTheme === 'dark') {
+        document.body.classList.add(darkTheme);
+        themeBtn.classList.add(iconTheme);
+    }
+    else {
+        document.body.classList.remove(darkTheme);
+        themeBtn.classList.remove(iconTheme);
+    }
+}
+
+// Theme Button
+themeBtn.addEventListener('click', () => {
+    const currentTheme = document.body.classList.contains(darkTheme) ? 'light' : 'dark';
+    const currentIcon = themeBtn.classList.contains(iconTheme) ? 'fa-sun' : 'fa-moon';
+
+    document.body.classList.toggle(darkTheme);
+    themeBtn.classList.toggle(iconTheme);
+
+    // Save to localStorage
+    localStorage.setItem('selectedTheme', currentTheme);
+    localStorage.setItem('selectedIcon', currentIcon);
+});
